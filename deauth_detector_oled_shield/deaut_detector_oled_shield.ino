@@ -3,7 +3,6 @@
 
 // part of the code comes from:
 // https://github.com/spacehuhn/DeauthDetector
-// http://www.esp8266learning.com/wemos-oled-shield-example.php
 
 
 // include necessary libraries
@@ -70,7 +69,7 @@ void display_string(String input){
     msg = "(^v^)";
   }
 
-  msg = msg + " DeDe" + String("\n\n");
+  msg = msg + " DeDe" + "\n\n";
   msg = msg + input + "\n\n";
   msg = msg + "Pkts : " + String(packets_count)+"\n";
   msg = msg + "Attks: " + String(total_attack_counter)+"\n";
@@ -112,7 +111,6 @@ void setup() {
 
 }
 
-
 void sniffer_start(){
   WiFi.disconnect();                   // Disconnect from any saved or active WiFi connections
   wifi_set_opmode(STATION_MODE);       // Set device to client/station mode
@@ -129,7 +127,6 @@ void sniffer_stop(){
 // ===== Loop ===== //
 void loop() {
   unsigned long current_time = millis(); // Get current time (in ms)
-
 
   // Update each second (or scan-time-per-channel * channel-range)
   if (current_time - update_time >= (sizeof(channels)*CH_TIME)) {
@@ -163,7 +160,7 @@ void loop() {
           display_string(" Attack!");
     }
     else{
-          display_string("scan... "+String(spin[cc2]));
+          display_string("        "+String(spin[cc2]));
     }
 
     // counters for display stuff
