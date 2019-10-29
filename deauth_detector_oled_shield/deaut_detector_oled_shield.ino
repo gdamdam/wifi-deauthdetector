@@ -72,21 +72,12 @@ void display_string(String input){
 
   msg = msg + " DeDe" + String("\n\n");
   msg = msg + input + "\n\n";
-  //msg = msg + "Epoch: " + String(epoch)+"\n";
   msg = msg + "Pkts : " + String(packets_count)+"\n";
   msg = msg + "Attks: " + String(total_attack_counter)+"\n";
   display.setCursor(0,0);
   display.println(msg);
   display.display();
   display.clearDisplay();
-}
-
-void printScanResult(int networksFound){
-  Serial.printf("%d network(s) found\n", networksFound);
-  for (int i = 0; i < networksFound; i++)
-  {
-    Serial.printf("%d: %s, Ch:%d (%ddBm) %s\n", i + 1, WiFi.SSID(i).c_str(), WiFi.channel(i), WiFi.RSSI(i), WiFi.encryptionType(i) == ENC_TYPE_NONE ? "open" : "");
-  }
 }
 
 // ===== Attack detection functions ===== //
@@ -135,11 +126,6 @@ void sniffer_stop(){
   wifi_promiscuous_enable(false);
 }
 
-void scan_ap(){
-  WiFi.disconnect();                   // Disconnect from any saved or active WiFi connections
-  delay(100);
-  WiFi.scanNetworksAsync(printScanResult);
-}
 // ===== Loop ===== //
 void loop() {
   unsigned long current_time = millis(); // Get current time (in ms)
@@ -195,8 +181,6 @@ void loop() {
     short ch = channels[ch_index];
 
     // Set channel
-    //Serial.print("Set channel to ");
-    //Serial.println(ch);
     wifi_set_channel(ch);
   }
 
