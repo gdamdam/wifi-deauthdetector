@@ -69,7 +69,7 @@ void display_string(String input){
     msg = "(^v^)";
   }
 
-  msg = msg + " DeDe" + "\n\n";
+  msg = msg + "    " + String(spin[cc2]) + "\n\n";
   msg = msg + input + "\n\n";
   msg = msg + "Pkts : " + String(packets_count)+"\n";
   msg = msg + "Attks: " + String(total_attack_counter)+"\n";
@@ -160,7 +160,7 @@ void loop() {
           display_string(" Attack!");
     }
     else{
-          display_string("        "+String(spin[cc2]));
+          display_string(" scanning");
     }
 
     // counters for display stuff
