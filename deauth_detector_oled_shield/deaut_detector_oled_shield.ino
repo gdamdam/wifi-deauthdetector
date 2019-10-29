@@ -1,9 +1,10 @@
+// WiFi Deauthenticator Detector (O_O)
+// Version 1.0
+//
 // This software is licensed under the MIT License.
 // See the license file for details.
-
 // part of the code comes from:
 // https://github.com/spacehuhn/DeauthDetector
-
 
 // include necessary libraries
 #include <ESP8266WiFi.h>
