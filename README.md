@@ -1,7 +1,9 @@
-# Wifi DeDe (O_O)
+# WiFi DeDe (O_O)
 ## a cute deauthentication frames detector for ESP8266
 
 This project recycles and reuses the good ideas from Stefan Kremser's project [DeauthDetector](https://github.com/spacehuhn/DeauthDetector) and give a nice UI to it.
+
+<img width="488" alt="WiFi DeDe" src="images/img1.jpg"> <img width="200" alt="WiFi DeDe" src="images/img2.jpg">
 
 ## How it works
 
