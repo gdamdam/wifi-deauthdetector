@@ -13,9 +13,9 @@ It detects [Wi-Fi deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_d
 ## How to install it
 
 You need to:
-- Install [Arduino]()
-- Install [ESP8266 SDK]()
-- Install libraries: SPI, Wire, Adafruit_GFX, Adafruit_SSD1306
+- Install [Arduino](https://www.arduino.cc/en/Main/Software)
+- Install [ESP8266 SDK](https://github.com/esp8266/Arduino)
+- Install libraries: `SPI`, `Wire`, `Adafruit_GFX`, `Adafruit_SSD1306`
 - Download the code `deaut_detector_oled_shield.ino`
 - If necessary personalize the _setttings_
 - Upload the code to your arduino with ESP8266
