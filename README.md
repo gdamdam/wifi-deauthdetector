@@ -8,7 +8,7 @@ This project recycles and reuses the good ideas from Stefan Kremser's project [D
 
 ## How it works
 
-To detect a [Wi-Fi deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack) this simple tool keeps listening on all the wifi channels looking for [Deauthentication framames](https://mrncciew.com/2014/10/11/802-11-mgmt-deauth-disassociation-frames/). It returns feedback to an [oled shield](https://wiki.wemos.cc/products:d1_mini_shields:oled_shield) connected to the ESP8266.
+It detects [Wi-Fi deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack) listening on all the wifi channels looking for [Deauthentication framames](https://mrncciew.com/2014/10/11/802-11-mgmt-deauth-disassociation-frames/). It returns feedback on an [oled shield](https://wiki.wemos.cc/products:d1_mini_shields:oled_shield) connected to the ESP8266.
 
 ## How to install it
 
