@@ -1,7 +1,7 @@
 # WiFi DeauthDetector (O_o) 
-## a cute deauthentication frames detector with an ESP8266
+## a cute deauthentication frames detector with an ESP8266 and oled shield
 
-This project reuses the good ideas from Stefan Kremser's project [DeauthDetector](https://github.com/spacehuhn/DeauthDetector) adding a display to it.
+This project reuses the good ideas from Stefan Kremser's project [DeauthDetector](https://github.com/spacehuhn/DeauthDetector) adding a cute display to it.
 
 <img width="488" alt="WiFi DeauthDetector" src="images/img1.jpg">
 
@@ -15,7 +15,7 @@ It detects [Wi-Fi deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_d
 You need to:
 - Install [Arduino](https://www.arduino.cc/en/Main/Software)
 - Install [ESP8266 SDK](https://github.com/esp8266/Arduino)
-- Install libraries: `SPI`, `Wire`, `Adafruit_GFX`, `Adafruit_SSD1306`
+- Install libraries: `Adafruit_GFX`, `Adafruit_SSD1306`
 - Download the code `deaut_detector_oled_shield.ino`
 - If necessary personalize the _settings_
 - Upload the code to your arduino with ESP8266
